@@ -1,0 +1,30 @@
+.send-button{
+    -fx-background-radius: 20;
+    -fx-background-color: #77ACF1;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , #77ACF1,20,0.1,0,0);
+
+}
+.send-button:hover{
+    -fx-background-radius: 20;
+    -fx-background-color:  #035397;
+    -fx-font-size: 16;
+    -fx-text-fill:white ;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian ,  #035397,30,0.1,0,0);
+
+}
+
+
+.text-field-message{
+    -fx-border-color: #22577A;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-prompt-text-fill: black;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+
+}
