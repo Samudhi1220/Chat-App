@@ -1,4 +1,4 @@
-package lk.ijse.centralcomputers.controller.utill;
+package lk.ijse.chatApp.utill;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -40,7 +40,6 @@ public class Navigation {
         Parent parent = FXMLLoader.load(resource);
         Scene scene = new Scene(parent);
         Stage stage = new Stage();
-        stage.initStyle(StageStyle.UNDECORATED);
         stage.setAlwaysOnTop(true);
         stage.setScene(scene);
         stage.show();

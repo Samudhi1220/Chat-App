@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/LoginPage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApp.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="314.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/young-girlfriends-looking-mobile.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtName" alignment="CENTER" layoutX="330.0" layoutY="156.0" prefHeight="27.0" prefWidth="228.0" promptText="Enter Your Name" styleClass="text-field-login" />
+      <JFXButton layoutX="397.0" layoutY="242.0" onAction="#userLoginBtnOnAction" prefHeight="36.0" prefWidth="96.0" styleClass="login-button" text="Let's Chat " textFill="#fff8f8" textOverrun="CENTER_ELLIPSIS">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label alignment="TOP_CENTER" layoutX="325.0" layoutY="21.0" prefHeight="54.0" prefWidth="240.0" text="WELCOME">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="45.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
